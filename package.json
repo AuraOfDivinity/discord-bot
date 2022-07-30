@@ -4,8 +4,15 @@
   "description": "A Simple dicord bot that displays all the upcoming & recent mlh hackathons. Users are also allowed to subscribe for to get notified of future hackathons as well.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "author": "Asel Peiris",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.19"
+  }
 }
