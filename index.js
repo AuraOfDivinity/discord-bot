@@ -33,6 +33,9 @@ client.on('message', message => {
         case 'upcoming':
             client.commands.get('upcoming').execute(message, args, Discord)
             break;
+        case 'recent':
+            client.commands.get('recent').execute(message, args, Discord)
+            break;
         default:
             message.channel.send('Please use the #help command for more details')
             
