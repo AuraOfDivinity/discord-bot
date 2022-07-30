@@ -1,0 +1,11 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "A Simple dicord bot that displays all the upcoming & recent mlh hackathons. Users are also allowed to subscribe for to get notified of future hackathons as well.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Asel Peiris",
+  "license": "ISC"
+}
