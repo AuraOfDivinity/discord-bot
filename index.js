@@ -26,8 +26,16 @@ client.on('message', message => {
     const args = message.content.slice(prefix.length).split(/ +/)
     const command = args.shift().toLowerCase()
 
-    if(command === 'ping'){
-        client.commands.get('ping').execute(message, args)
+    switch(command){
+        case 'ping':
+            client.commands.get('ping').execute(message, args)
+            break;
+        case 'upcoming':
+            client.commands.get('upcoming').execute(message, args, Discord)
+            break;
+        default:
+            message.channel.send('Please use the #help command for more details')
+            
     }
 })
 
