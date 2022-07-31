@@ -34,7 +34,7 @@ module.exports = {
         let webhooks = await message.channel.fetchWebhooks()
         for (let [id, webhook] of webhooks) await webhook.delete(`Requested by ${message.author.tag}`);
 
-        message.channel.createWebhook('Embed Hook', message.author.displayAvatarURL)
+        message.channel.createWebhook('Frankie Bot Upcoming Events', message.author.displayAvatarURL)
             .then(w => w.send({embeds: embed_array}));
 
         
