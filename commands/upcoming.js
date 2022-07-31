@@ -31,7 +31,12 @@ module.exports = {
             embed_array.push(newEmbed)
         }
 
+        let webhooks = await message.channel.fetchWebhooks()
+        for (let [id, webhook] of webhooks) await webhook.delete(`Requested by ${message.author.tag}`);
+
         message.channel.createWebhook('Embed Hook', message.author.displayAvatarURL)
             .then(w => w.send({embeds: embed_array}));
+
+        
     }
 }
