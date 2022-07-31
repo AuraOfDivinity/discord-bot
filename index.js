@@ -30,6 +30,9 @@ client.on('message', message => {
         case 'ping':
             client.commands.get('ping').execute(message, args)
             break;
+        case 'help':
+            client.commands.get('help').execute(message, args, Discord)
+            break;
         case 'upcoming':
             client.commands.get('upcoming').execute(message, args, Discord)
             break;
